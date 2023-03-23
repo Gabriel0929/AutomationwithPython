@@ -26,7 +26,9 @@ class OverviewPageLocators:
     finishButton_Id = "finish"
 
 class completePageLocators:
-    CompleteTextPath = "//div[@class='complete-text']"
+    #CompleteTextPath = "//div[@class='complete-text']"
+    Complete_textID = "checkout_complete_container"
+    Complete_textClassId = "complete-text"
 
 
 

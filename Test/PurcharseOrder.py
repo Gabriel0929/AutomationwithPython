@@ -47,8 +47,12 @@ class LoginTest(unittest.TestCase):
         overview = overviewPage(driver)
         overview.finish_button()
         complete = completePage(driver)
-        print(complete.complete_text())
-        self.assertEqual(complete.complete_text(), expectedCompleteTest, "First value and second value are not equal !")
+        actualresult = complete.complete_text().text
+        #print(actualresult)
+        #print(complete.complete_text())
+        #self.assertEqual(complete.complete_text(), expectedCompleteTest, "First value and second value are not equal !")
+        assert (expectedCompleteTest == actualresult)
+
         time.sleep(2)
 
 
